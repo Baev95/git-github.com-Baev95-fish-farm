@@ -15,7 +15,7 @@
     <p>мда</p>
     <a href="/page/contact/">Перейти в контакты</a>
 
-
+    {{ $id }}
     <div class="header__block-mob dropdown">
         <?/*<div class="dropbtn">{{ app()->getLocale() }}</div> <!-- Отображение текущего языка --> */?>
         <div class="dropdown-content">

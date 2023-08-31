@@ -13,6 +13,8 @@
         @lang('public.welcome')
     </h1>
     <p>мда</p>
+    {{ $id }}
+    <br>
     <a href="page/contact/">Перейти в контакты</a>
 
 

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\App;
 use App\Http\Controllers\LocalizationControler;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -28,7 +29,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 });
 
 //Route::get('/locale/{locale}', 'App\Http\Controllers\LocalizationControler@setLang')->name('setLang');
-Route::get('/', 'App\Http\Controllers\HomeController@index');
+Route::get('/', [HomeController::class, 'index']);
 Route::get('page/{slug}', [PageController::class, "show"]);
 
 Route::fallback(function () {

@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Facade;
 
 class HomeController extends Controller
 {
-	public function index()
+
+
+
+	public function index($request, $id)
 	{
 
 		//DB::insert("INSERT INTO posts (title, content) VALUES (?, ?)", ["Статья 3", "Текст статьи 3"]);
@@ -18,6 +23,8 @@ class HomeController extends Controller
 		//return dump($posts);
 		//return dump($posts);
 		//return var_dump($posts);
-		return view('home');
+		$value = $request->session()->get('local', 	'default');
+		$a = 'a'; // session()->get('local')'';
+		return view('home', ['id' => $value]);
 	}
 }
