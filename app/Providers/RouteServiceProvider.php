@@ -48,13 +48,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
-<<<<<<< HEAD
 
         // DB::listen(function ($query) {
         //     dump($query->sql, $query->bindings);
         // });
-=======
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
     }
 
     /**

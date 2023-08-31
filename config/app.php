@@ -179,7 +179,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+<<<<<<< HEAD
         // \App\Services\Localization\LocalizationServiceProvider::class,
+=======
+        // App\Services\Localization\LocalizationServiceProvider::class,
+>>>>>>> 201a7545515f831c38a8694abf56613a81c57fae
     ],
 
     /*
