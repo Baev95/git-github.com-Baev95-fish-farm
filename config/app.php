@@ -67,13 +67,9 @@ return [
     |
     */
 
-<<<<<<< HEAD
     //'timezone' => 'UTC',
     //'timezone' => 'Asia/Tbilisi', 
     'timezone' => 'Europe/Moscow',
-=======
-    'timezone' => 'UTC',
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
 
     /*
     |--------------------------------------------------------------------------
