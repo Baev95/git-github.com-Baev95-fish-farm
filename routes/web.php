@@ -5,11 +5,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\LocalizationControler;
 use App\Http\Controllers\PageController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\MainController;
 
-=======
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
 
 /*
 |--------------------------------------------------------------------------
@@ -22,21 +19,14 @@ use App\Http\Controllers\Admin\MainController;
 |
 */
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
 // Localization Route
 
 Route::get("locale/{lung}", [LocalizationControler::class, "setLang"]);
 
-<<<<<<< HEAD
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
 });
 
-=======
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
 //Route::get('/locale/{locale}', 'App\Http\Controllers\LocalizationControler@setLang')->name('setLang');
 Route::get('/', 'App\Http\Controllers\HomeController@index');
 Route::get('page/{slug}', [PageController::class, "show"]);
