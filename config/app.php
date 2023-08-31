@@ -67,13 +67,9 @@ return [
     |
     */
 
-<<<<<<< HEAD
     //'timezone' => 'UTC',
     //'timezone' => 'Asia/Tbilisi', 
     'timezone' => 'Europe/Moscow',
-=======
-    'timezone' => 'UTC',
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
 
     /*
     |--------------------------------------------------------------------------
@@ -183,7 +179,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        \App\Services\Localization\LocalizationServiceProvider::class,
+        // \App\Services\Localization\LocalizationServiceProvider::class,
     ],
 
     /*
@@ -239,7 +235,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'LocalizationService' => App\Services\Localization\LocalizationService::class,
+        //'LocalizationService' => App\Services\Localization\LocalizationService::class,
 
     ],
 
