@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1> Привет</h1>
+    <h1> Привет РОМАШКА</h1>
     <form action="{{ route('contact') }}" method="post">
         {{-- csrf_field() --}}
         @csrf
