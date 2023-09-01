@@ -10,17 +10,6 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-<<<<<<< HEAD
-/*
-=======
-
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
-<<<<<<< HEAD
-*/
 
 mix.styles([
     'resources/assets/admin/plugins/fontawesome-free/css/all.min.css',
@@ -38,5 +27,12 @@ mix.copyDirectory('resources/assets/admin/plugins/fontawesome-free/webfonts', 'p
 mix.copyDirectory('resources/assets/admin/img', 'public/assets/admin/img');
 
 mix.copy('resources/assets/admin/css/adminlte.min.css.map', 'public/assets/admin/css/adminlte.min.css.map');
-=======
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
+
+mix.styles([
+    'resources/css/reset.css',
+    'resources/css/app.css'
+], 'public/css/app.css');
+
+mix.styles('resources/css/media.css', 'public/css/media.css');
+mix.scripts('resources/js/swiper-bundle.js', 'public/js/swiper-bundle.js');
+mix.scripts('resources/js/app.js', 'public/js/app.js');

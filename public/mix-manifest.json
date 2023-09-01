@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "/assets/admin/css/admin.css": "/assets/admin/css/admin.css",
     "/assets/admin/js/admin.js": "/assets/admin/js/admin.js",
     "/assets/admin/webfonts/fa-brands-400.eot": "/assets/admin/webfonts/fa-brands-400.eot",
@@ -50,9 +49,9 @@
     "/assets/admin/img/user6-128x128.jpg": "/assets/admin/img/user6-128x128.jpg",
     "/assets/admin/img/user7-128x128.jpg": "/assets/admin/img/user7-128x128.jpg",
     "/assets/admin/img/user8-128x128.jpg": "/assets/admin/img/user8-128x128.jpg",
-    "/assets/admin/css/adminlte.min.css.map": "/assets/admin/css/adminlte.min.css.map"
-=======
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
->>>>>>> 964700bc12224c8fa169ce5538a667135a219a54
+    "/assets/admin/css/adminlte.min.css.map": "/assets/admin/css/adminlte.min.css.map",
+    "/css/app.css": "/css/app.css",
+    "/css/media.css": "/css/media.css",
+    "/js/swiper-bundle.js": "/js/swiper-bundle.js",
+    "/js/app.js": "/js/app.js"
 }

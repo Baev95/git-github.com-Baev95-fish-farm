@@ -13,7 +13,7 @@ class HomeController extends Controller
 
 
 
-	public function index($request, $id)
+	public function index(Request $request)
 	{
 
 		//DB::insert("INSERT INTO posts (title, content) VALUES (?, ?)", ["Статья 3", "Текст статьи 3"]);
@@ -23,8 +23,9 @@ class HomeController extends Controller
 		//return dump($posts);
 		//return dump($posts);
 		//return var_dump($posts);
-		$value = $request->session()->get('local', 	'default');
-		$a = 'a'; // session()->get('local')'';
-		return view('home', ['id' => $value]);
+		//$value = $request->server('HTTP_ACCEPT_LANGUAGE');
+		$current_lang = $request->session()->get('locale', 'en');
+		//$current_lang = $request->session()->all()['locale']);
+		return view('home', ['current_lang' => $current_lang]);
 	}
 }
