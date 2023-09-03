@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title-block')
-    Главная
+    @lang('home.title')
 @endsection
 
 @section('content')
@@ -11,7 +11,7 @@
             <div class="container banner-wrapper">
 
                 <h1 class="zag banner__h1">
-                    კეთილი იყოს თქვენი მობრძანება ქართულ აკვაკულტურაში!
+                    @lang('home.banner_text')
                 </h1>
                 <div class="banner__arrow">
                     <a href="javascript:void(0);" class="banner__arrow-href banner__arrow-scroll">
@@ -34,13 +34,16 @@
             </div>
         </section>
 
+        <style>
+
+        </style>
+
         <div class="section m160" data-aos="fade-up">
             <div class="container fish-description">
 
                 <div class="item1">
                     <p class="fish-description__text-b">
-                        ჩვენ ვართ ეკოლოგიურად სუფთა თევზის საწარმო, რომელიც მდებარეობს საქართველოს თვალწარმტაც მთიან
-                        რეგიონში.
+                        @lang('home.we_are_fish_farm')
                     </p>
                     <img src="/images/main_index_img/fish_catch.png" alt="fish_catch">
                 </div>
@@ -50,8 +53,10 @@
                         მაღალი ხარისხის თევზს გაჯერებული მინერალებითა და სხვადასხვა ბუნებრივი მიკროელემენტებით.
                     </p>
                     <img src="/images/main_index_img/two_fishs.png" alt="two_fishs">
+
                     <div class="arrow-rigth">
-                        <a href="#" class="arrow-rigth__href arrow-rigth__href-left">მეტი ჩვენს შესახებ
+                        <a href="#" class="arrow-rigth__href">
+                            @lang('public.more_about_us')
                             <span> </span>
                         </a>
                     </div>
@@ -120,11 +125,6 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img1.png" alt="/images/gallery/slider__img6.png">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
                             <a href="/images/gallery/slider__img3.png" data-fancybox="gallery">
                                 <img src="/images/gallery/slider__img3.png" alt="/images/gallery/slider__img6.png">
                             </a>
@@ -142,11 +142,6 @@
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
                                 <img src="/images/gallery/slider__img1.png" alt="/images/gallery/slider__img6.png">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img4.png" alt="/images/gallery/slider__img6.png">
                             </a>
                         </div>
                         <div class="swiper-slide">
@@ -253,7 +248,8 @@
                         <h4 class="our-products__block-title h4">თევზის საკვები</h4>
                         <img class="our-products__block-img" src="/images/our-products/food_fishs.png" alt="icon">
                         <div class="arrow-rigth">
-                            <a href="#" class="arrow-rigth__href">მეტის გასაგებად
+                            <a href="#" class="arrow-rigth__href">
+                                მეტის გასაგებად
                                 <span> </span>
                             </a>
                         </div>

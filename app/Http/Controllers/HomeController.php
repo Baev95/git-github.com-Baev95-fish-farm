@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace App\Http\Controllers;
 
@@ -24,7 +24,7 @@ class HomeController extends Controller
 		//return dump($posts);
 		//return var_dump($posts);
 		//$value = $request->server('HTTP_ACCEPT_LANGUAGE');
-		$current_lang = $request->session()->get('locale', 'en');
+		$current_lang = $request->session()->get('locale', 'ge');
 		//$current_lang = $request->session()->all()['locale']);
 		return view('home', ['current_lang' => $current_lang]);
 	}

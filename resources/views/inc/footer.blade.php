@@ -5,28 +5,23 @@
 
         <ul class="footer__block-ul">
             <li class="footer__block-ul-li">
-                <a href="/about">
-                    Ჩვენს შესახებ
-                </a>
-            </li>
-            <?/*<li class="footer__block-ul-li">
-                <a href="#">
-                    პროდუქტები
-                </a>
-            </li>*/?>
-            <li class="footer__block-ul-li">
-                <a href="/news">
-                    სიახლეები
+                <a href="{{ route('about') }}">
+                    @lang('public.about')
                 </a>
             </li>
             <li class="footer__block-ul-li">
-                <a href="/career">
-                    კარიერა
+                <a href="{{ route('news') }}">
+                    @lang('public.news')
                 </a>
             </li>
             <li class="footer__block-ul-li">
-                <a href="/contact">
-                    კონტაქტები
+                <a href="{{ route('career') }}">
+                    @lang('public.career')
+                </a>
+            </li>
+            <li class="footer__block-ul-li">
+                <a href="{{ route('contact') }}">
+                    @lang('public.contact')
                 </a>
             </li>
         </ul>
@@ -67,7 +62,7 @@
 
         <div>
             <div class="footer__block">
-                <p class="footer__text">თუ თქვენ გაქვთ რაიმე შეკითხვა ან გჭირდებათ დახმარება</p>
+                <p class="footer__text">@lang('public.footer__text')</p>
             </div>
             <div class="footer__block">
                 <a class="header__block-href-soc footer__block-href-soc" href="tel:+902525366229"><svg

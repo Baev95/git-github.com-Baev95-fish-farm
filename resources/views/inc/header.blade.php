@@ -1,29 +1,29 @@
 <header class="header">
     <div class="container header__wrapper">
-        <div class="header__block">
+        <div class="header__block lvl1">
             <a href="/">
                 <img class="logo" src="/images/fish_logo/head_log.png">
             </a>
             <div class="dropdown">
                 <div class="dropbtn">
-                    <? if ($current_lang == 'en'){ ?>
+                    <?php if ($current_lang == 'ge') { ?>
+                    <img class="header__block-flags" src="/images/flags/GE.png"><span>GE</span>
+                    <?php } else { ?>
                     <img class="header__block-flags" src="/images/flags/EN.png"><span>EN</span>
-                    <? } else { ?>
-                    <img class="header__block-flags" src="/images/flags/GE.png"><span>RU</span>
-                    <? } ?>
+                    <?php } ?>
                 </div>
                 <div class="dropdown-content" id="dropdownContent">
-                    <? if ($current_lang == 'en'){ ?>
-                    <a class="dropdown-item" href="locale/ru" data-lang="ru">
-                        <img class="header__block-flags" src="/images/flags/GE.png">
-                        <span>RU</span>
-                    </a>
-                    <? } else { ?>
+                    <?php if ($current_lang == 'ge') { ?>
                     <a class="dropdown-item" href="locale/en" data-lang="en">
                         <img class="header__block-flags" src="/images/flags/EN.png">
                         <span>EN</span>
                     </a>
-                    <? } ?>
+                    <?php } else { ?>
+                    <a class="dropdown-item" href="locale/ge" data-lang="ge">
+                        <img class="header__block-flags" src="/images/flags/GE.png">
+                        <span>GE</span>
+                    </a>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -31,28 +31,23 @@
         <nav class="header__block">
             <ul class="header__block-ul">
                 <li class="header__block-li">
-                    <a href="/about">
-                        Ჩვენს შესახებ
-                    </a>
-                </li>
-                <?/*<li class="header__block-li">
-                        <a href="/newsList">
-                            პროდუქტები
-                        </a>
-                    </li>*/?>
-                <li class="header__block-li">
-                    <a href="/news">
-                        სიახლეები
+                    <a href="{{ route('about') }}">
+                        @lang('public.about')
                     </a>
                 </li>
                 <li class="header__block-li">
-                    <a href="/career">
-                        კარიერა
+                    <a href="{{ route('news') }}">
+                        @lang('public.news')
                     </a>
                 </li>
                 <li class="header__block-li">
-                    <a href="/contact">
-                        კონტაქტები
+                    <a href="{{ route('career') }}">
+                        @lang('public.career')
+                    </a>
+                </li>
+                <li class="header__block-li">
+                    <a href="{{ route('contact') }}">
+                        @lang('public.contact')
                     </a>
                 </li>
             </ul>
@@ -92,49 +87,44 @@
                 <ul class="header__block-ul menu" id="menu">
                     <div class="header__block-mob dropdown">
                         <div class="dropbtn">
-                            <? if ($current_lang == 'en'){ ?>
+                            <?php if ($current_lang == 'en') { ?>
                             <img class="header__block-flags" src="/images/flags/EN.png"><span>EN</span>
-                            <? } else { ?>
-                            <img class="header__block-flags" src="/images/flags/GE.png"><span>RU</span>
-                            <? } ?>
+                            <?php } else { ?>
+                            <img class="header__block-flags" src="/images/flags/GE.png"><span>GE</span>
+                            <?php } ?>
                         </div>
                         <div class="dropdown-content" id="dropdownContent">
-                            <? if ($current_lang == 'en'){ ?>
+                            <?php if ($current_lang == 'en') { ?>
                             <a class="dropdown-item" href="locale/ru" data-lang="ru">
                                 <img class="header__block-flags" src="/images/flags/GE.png">
-                                <span>RU</span>
+                                <span>GE</span>
                             </a>
-                            <? } else { ?>
+                            <?php } else { ?>
                             <a class="dropdown-item" href="locale/en" data-lang="en">
                                 <img class="header__block-flags" src="/images/flags/EN.png">
                                 <span>EN</span>
                             </a>
-                            <? } ?>
+                            <?php } ?>
                         </div>
                     </div>
                     <li class="header__block-li">
-                        <a href="/about">
-                            Ჩვენს შესახებ
-                        </a>
-                    </li>
-                    <?/*<li class="header__block-li">
-                                    <a href="/newsList">
-                                        პროდუქტები
-                                    </a>
-                                </li>*/?>
-                    <li class="header__block-li">
-                        <a href="/news">
-                            სიახლეები
+                        <a href="{{ route('about') }}">
+                            @lang('public.about')
                         </a>
                     </li>
                     <li class="header__block-li">
-                        <a href="/career">
-                            კარიერა
+                        <a href="{{ route('news') }}">
+                            @lang('public.news')
                         </a>
                     </li>
                     <li class="header__block-li">
-                        <a href="/contact">
-                            კონტაქტები
+                        <a href="{{ route('career') }}">
+                            @lang('public.career')
+                        </a>
+                    </li>
+                    <li class="header__block-li">
+                        <a href="{{ route('contact') }}">
+                            @lang('public.contact')
                         </a>
                     </li>
                     <div class="header__block-mob">

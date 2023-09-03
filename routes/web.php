@@ -32,9 +32,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [PageController::class, "about"])->name('about');
 Route::get('/contact', [PageController::class, "contact"])->name('contact');
-Route::get('/news', [PageController::class, "news"])->name('news');
+Route::get('/news', [PageController::class, "newsList"])->name('news');
 Route::get('/career', [PageController::class, "career"])->name('career');
-//Route::get('page/{slug}', [PageController::class, "show"]);
+Route::get('news/{slug}', [PageController::class, "news"]);
 
 Route::fallback(function () {
     abort(404, "Oops, Page not found <b>404</b>");

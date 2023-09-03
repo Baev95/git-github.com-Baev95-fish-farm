@@ -145,15 +145,22 @@ a {
 	padding: 0 20px;
 	margin: 0 auto;
 }
+
 .arrow-rigth {
 	color: var(--green, #096e49);
 	font-size: 20px;
 	font-weight: 700;
-	line-height: 150%; /* 30px */
+	line-height: 150%;
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: flex-start;
 }
+
 .arrow-rigth__href:hover {
 	color: #052d5e;
 }
+
 .arrow-rigth__href {
 	width: 100%;
 	width: fit-content;
@@ -166,78 +173,76 @@ a {
 		content: "";
 		position: absolute;
 		top: -10px;
-		right: -67%;
+		right: -80px;
 		display: block;
 		width: 72px;
 		height: 72px;
 		border: 2px solid rgba(9, 110, 73, 1);
 		border-radius: 50%;
 	}
+
 	& span {
 		display: block;
 		width: 100%;
+
 		&::before {
 			content: "";
-			display: block;
 			position: absolute;
-			width: 235px;
+			width: calc(100% + 50px);
 			opacity: 1;
-			height: 23.3px;
-			background: url("/images/str/Vector.svg") center center no-repeat;
+			height: 24px;
+			background: url(/images/str/Vector.svg) center center no-repeat;
 			background-size: cover;
-			top: 15px;
+			background-position-x: right;
+			top: 20px;
 			transition: width 0.4s linear;
 		}
+
 		&::after {
 			content: "";
-			/*display: none;*/
 			position: absolute;
 			opacity: 0;
-			display: block;
-			width: 285px;
-			width: 235px;
-			height: 23.3px;
-			background: url("/images/str/Vector_2.svg") center center no-repeat;
+			width: calc(100% + 45px);
+			height: 24px;
+			background: url(/images/str/Vector_2.svg) center center no-repeat;
 			background-size: cover;
-			top: 15px;
+			top: 20px;
 			transition: width 0.4s linear;
 		}
 	}
+
 	&:hover {
 		&::after {
 			border: 2px solid #052d5e;
 		}
+
 		& span {
 			&::before {
-				/*display: none;*/
 				opacity: 0;
-
-				transition: width 0.4s linear;
-				width: 285px;
+				width: calc(100% + 110px);
+				transition: all 0.4s linear;
 			}
+
 			&::after {
-				display: block;
 				opacity: 1;
-				width: 285px;
+				width: calc(100% + 110px);
+				/*transition: all 0.4s linear;*/
 				transition: width 0.4s linear;
 			}
 		}
 	}
 }
+.fish-description .item2 .arrow-rigth {
+	justify-content: center;
+}
+.fish-description .item2 .arrow-rigth__href {
+	left: 50px;
+}
 .arrow-rigth__href-left {
-	left: 37%;
-
-	&::after {
-		right: -46%;
-	}
+	right: 60px;
 }
 .arrow-rigth__href-rigth {
-	left: -45%;
-	/*
-	&::after {
-		right: -46%;
-	}
-	*/
+	right: 60px;
 }
 
 .h2 {
@@ -1321,7 +1326,7 @@ button:hover {
 	width: 100%;
 	display: none;
 	position: absolute;
-	top: 100%;
+	top: 98%;
 	left: 0;
 	background-color: #f9f9f9;
 	border-radius: 4px;
@@ -1351,7 +1356,7 @@ button:hover {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.lvl1 .dropdown:hover .dropdown-content {
 	display: block;
 }
 .swiper-button-prev,

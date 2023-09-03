@@ -4,10 +4,7 @@
 	}
 	.banner__arrow-href {
 		transform: scale(0.9);
-	} /*
-	.banner__arrow-href:hover {
-		transform: scale(1.1);
-	}*/
+	}
 	.banner {
 		height: 582px;
 	}
@@ -27,7 +24,7 @@
 		max-width: 560px;
 	}
 	.news-head .arrow-rigth {
-		left: -60px;
+		left: -120px;
 		position: relative;
 	}
 	.news__card-img {
@@ -372,6 +369,12 @@
 }
 
 @media screen and (max-width: 576px) {
+	.fish-description .item2 .arrow-rigth__href {
+		left: 0;
+	}
+	.features__card-head {
+		flex-wrap: wrap;
+	}
 	.logo {
 		width: 100px;
 	}

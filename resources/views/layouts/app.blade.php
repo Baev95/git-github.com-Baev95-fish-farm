@@ -56,10 +56,16 @@
         function hambHandler(e) {
             e.preventDefault();
             // Переключаем стили элементов при клике
+
             popup.classList.toggle("open");
             hamb.classList.toggle("active");
             body.classList.toggle("noscroll");
             renderPopup();
+            let but = document.querySelectorAll('.header__block-mob.dropdown .dropbtn')[1];
+            but.addEventListener("click", () => {
+                document.querySelectorAll('.header__block-mob.dropdown .dropdown-content')[1].classList
+                    .toggle('is-block');
+            })
         }
 
         // Здесь мы рендерим элементы в наш попап
@@ -135,23 +141,16 @@
     </script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            console.log('работаешь?');
-            let but = document.querySelector('.header__block-mob.dropdown .dropbtn');
-            if (but) {
-                console.log('а щас?');
-                but.addEventListener("click", function(e) {
-                    console.log('терь сдох?');
-                    console.log(e);
-                    document.querySelector('.header__block-mob.dropdown .dropdown-content').classList
-                        .toggle('is-open');
-                });
-            }
-        });
+        /*
+                                            let but = document.querySelectorAll('.header__block-mob.dropdown .dropbtn');
+                                            but.addEventListener("click", () => {
+                                                document.querySelectorAll('.header__block-mob.dropdown .dropdown-content').classList
+                                                    .toggle('is-block');
+                                            });*/
     </script>
 
     <style>
-        .is-open {
+        .is-block {
             display: block;
         }
     </style>
