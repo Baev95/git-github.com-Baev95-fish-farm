@@ -28,6 +28,35 @@
             </div>
         </div>
 
+
+        <style>
+            .menu-item a:hover {
+                color: #4d977c !important;
+            }
+
+            .header__block-li.menu:hover .menu_sub {
+                display: block;
+                position: absolute;
+                width: max-content;
+                z-index: 5;
+
+                max-width: 500px;
+                padding: 24px;
+                border-radius: 16px;
+                background: var(--secondary, #096E49);
+                box-shadow: 0px 4px 24px 0px rgba(9, 110, 73, 0.10);
+            }
+
+            .menu_sub {
+                display: none;
+            }
+
+            .menu-item {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        </style>
+
         <nav class="header__block">
             <ul class="header__block-ul">
                 <li class="header__block-li">
@@ -35,10 +64,39 @@
                         @lang('public.about')
                     </a>
                 </li>
-                <li class="header__block-li">
-                    <a href="{{ route('news') }}">
-                        @lang('public.news')
+                <li class="header__block-li menu" style="position: relative;">
+                    <a href="{{ route('products') }}">
+                        @lang('public.product')
                     </a>
+                    <ul class="menu_sub">
+                        <li class="header__block-li menu-item">
+                            <a href="{{ route('fish') }}" style="color: rgba(255, 255, 255, 1);">
+                                @lang('public.fish')
+                            </a>
+                        </li>
+                        <li class="header__block-li menu-item">
+                            <a href="{{ route('fishFeed') }}" style="color: rgba(255, 255, 255, 1);">
+                                @lang('public.fishFeed')
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__block-li menu" style="position: relative;">
+
+                    @lang('public.news')
+
+                    <ul class="menu_sub">
+                        <li class="header__block-li menu-item">
+                            <a href="{{ route('ecological_aquaculture') }}" style="color: rgba(255, 255, 255, 1);">
+                                @lang('public.ecological_aquaculture')
+                            </a>
+                        </li>
+                        <li class="header__block-li menu-item">
+                            <a href="{{ route('unveiling_the_factors') }}" style="color: rgba(255, 255, 255, 1);">
+                                @lang('public.unveiling_the_factors')
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__block-li">
                     <a href="{{ route('career') }}">

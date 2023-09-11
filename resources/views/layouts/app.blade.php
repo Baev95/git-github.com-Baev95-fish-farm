@@ -11,9 +11,10 @@
 
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/media.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/build/swiper.css">
+    <? // <link rel="stylesheet" href="/css/build/swiper.css"> ?>
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -27,7 +28,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="/js/swiper-bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <? /* <script src="/js/swiper-bundle.js"></script> */ ?>
     <script src="/js/app.js"></script>
 
     <script>
@@ -105,7 +107,8 @@
             direction: 'horizontal',
             slidesPerView: 'auto',
             loop: true,
-            /*effect: 'slide',*/
+            // effect: 'slide',
+            touchRatio: 1,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -113,17 +116,18 @@
             scrollbar: {
                 el: '.swiper-scrollbar',
                 clickable: true,
-                draggable: true,
+                draggable: false, // измените значение на false
             },
             spaceBetween: 10,
             slidesPerView: 1.12,
             autoHeight: true,
+            observer: true, // добавьте эту опцию
             breakpoints: {
                 320: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 2.5, // увеличьте значение
                 },
                 550: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 3.5, // увеличьте значение
                 },
                 768: {
                     slidesPerView: 3.5,
@@ -136,17 +140,7 @@
                     spaceBetween: 40,
                 }
             }
-
         });
-    </script>
-
-    <script>
-        /*
-                                            let but = document.querySelectorAll('.header__block-mob.dropdown .dropbtn');
-                                            but.addEventListener("click", () => {
-                                                document.querySelectorAll('.header__block-mob.dropdown .dropdown-content').classList
-                                                    .toggle('is-block');
-                                            });*/
     </script>
 
     <style>

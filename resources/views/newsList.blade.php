@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title-block')
-    Новости
+    @lang('public.news')
 @endsection
 
 @section('content')
@@ -9,9 +9,9 @@
         <section class="bread">
             <div class="container bread__wrapper">
 
-                <div class="bread__crumbs"><span>სახლში</span> / <span>სიახლეები</span></div>
+                <div class="bread__crumbs"><a href="/">@lang('public.home')</a> / <span>@lang('public.news')</span></div>
                 <div class="bread__block">
-                    <h1 class="bread__h1">სიახლეები</h1>
+                    <h1 class="bread__h1">@lang('public.news')</h1>
                     <svg class="bread__img" xmlns="http://www.w3.org/2000/svg" width="171" height="103"
                         viewBox="0 0 171 103" fill="none">
                         <path
@@ -36,275 +36,9 @@
         </section>
 
         <section class="news m160 m80news">
-            <?/*data-aos="flip-up"*/ ?>
             <div class="container">
 
                 <div class="news__list">
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
-
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
 
                     <div class="news__card">
                         <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
@@ -334,7 +68,7 @@
 
                 <div class="news__button">
                     <button class="show-more">
-                        Show more
+                        @lang('public.show_more')
                     </button>
                 </div>
 

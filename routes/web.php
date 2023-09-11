@@ -34,6 +34,13 @@ Route::get('/about', [PageController::class, "about"])->name('about');
 Route::get('/contact', [PageController::class, "contact"])->name('contact');
 Route::get('/news', [PageController::class, "newsList"])->name('news');
 Route::get('/career', [PageController::class, "career"])->name('career');
+Route::get('/fish', [PageController::class, "fish"])->name('fish');
+Route::get('/fishFeed', [PageController::class, "fishFeed"])->name('fishFeed');
+Route::get('/products', [PageController::class, "products"])->name('products');
+Route::get('/unveiling_the_factors', [PageController::class, "unveiling_the_factors"])->name('unveiling_the_factors');
+Route::get('/ecological_aquaculture', [PageController::class, "ecological_aquaculture"])->name('ecological_aquaculture');
+
+//Route::get('/products/{slug}', [PageController::class, "products"])->name('products');
 Route::get('news/{slug}', [PageController::class, "news"]);
 
 Route::fallback(function () {

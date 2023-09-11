@@ -34,7 +34,6 @@ a {
 	padding: 0 20px;
 	margin: 0 auto;
 }
-
 .arrow-rigth {
 	color: var(--green, #096e49);
 	font-size: 20px;
@@ -83,7 +82,7 @@ a {
 			background: url(/images/str/Vector.svg) center center no-repeat;
 			background-size: cover;
 			background-position-x: right;
-			top: 20px;
+			top: 16px;
 			transition: width 0.4s linear;
 		}
 
@@ -91,11 +90,12 @@ a {
 			content: "";
 			position: absolute;
 			opacity: 0;
-			width: calc(100% + 45px);
+			width: calc(100% + 50px);
 			height: 24px;
 			background: url(/images/str/Vector_2.svg) center center no-repeat;
+			background-position-x: right;
 			background-size: cover;
-			top: 20px;
+			top: 16px;
 			transition: width 0.4s linear;
 		}
 	}
@@ -109,6 +109,7 @@ a {
 			&::before {
 				opacity: 0;
 				width: calc(100% + 110px);
+				background-position-x: right;
 				transition: all 0.4s linear;
 			}
 
@@ -116,10 +117,15 @@ a {
 				opacity: 1;
 				width: calc(100% + 110px);
 				/*transition: all 0.4s linear;*/
+				background-position-x: right;
 				transition: width 0.4s linear;
 			}
 		}
 	}
+}
+.news-head .arrow-rigth {
+	left: -80px;
+	position: relative;
 }
 .fish-description .item2 .arrow-rigth {
 	justify-content: center;
@@ -486,11 +492,25 @@ p {
 	flex-direction: column;
 	align-items: center;
 	background-position: bottom;
+	position: relative;
+}
+.banner:after {
+	content: "";
+	background: black;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.6;
+	z-index: 2;
+	box-shadow: 0px 1px 20px 4px grey;
 }
 .banner-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 3;
 }
 .banner__h1 {
 	font-size: 70px;
@@ -504,6 +524,7 @@ p {
 .banner .banner__arrow {
 	cursor: pointer;
 	width: fit-content;
+	z-index: 3;
 }
 .banner__arrow {
 	display: flex;
@@ -768,6 +789,7 @@ p {
 	margin-top: 107px;
 	position: absolute;
 	left: 0;
+	max-width: 400px;
 }
 .features__description-rigth-img {
 	margin-bottom: 106px;
@@ -936,15 +958,15 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 }
-.bread__crumbs {
+.bread__crumbs,
+.bread__crumbs > * {
 	color: var(--white, #fff);
-
-	/* 16pxCalibri */
-	font-family: Calibri;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 150%; /* 24px */
+}
+.bread__crumbs a:hover {
+	color: #4d977c;
+}
+.bread__crumbs span {
+	color: #096e49;
 }
 .bread__h1 {
 	color: var(--white, #fff);

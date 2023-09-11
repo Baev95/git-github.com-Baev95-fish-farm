@@ -29,33 +29,33 @@
         <div class="footer-gallery" id="gallery">
 
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img6.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img6.png" alt="/images/gallery/slider__img6.png">
+                <a href="/images/gallery/slider__img1.png" data-fancybox="gallery">
+                    <img src="/images/gallery/slider__img1.png" alt="">
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img5.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img5.png" alt="/images/gallery/slider__img6.png">
-                </a>
-            </div>
-            <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img1.png" alt="/images/gallery/slider__img6.png">
+                <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
+                    <img src="/images/gallery/slider__img2.png" alt="">
                 </a>
             </div>
             <div class="footer-gallery__slide">
                 <a href="/images/gallery/slider__img3.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img3.png" alt="/images/gallery/slider__img6.png">
+                    <img src="/images/gallery/slider__img3.png" alt="">
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img2.png" alt="/images/gallery/slider__img6.png">
+                <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
+                    <img src="/images/gallery/slider__img4.png" alt="">
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img5.png" alt="/images/gallery/slider__img6.png">
+                <a href="/images/gallery/slider__img5.png" data-fancybox="gallery">
+                    <img src="/images/gallery/slider__img5.png" alt="">
+                </a>
+            </div>
+            <div class="footer-gallery__slide">
+                <a href="/images/gallery/slider__img6.png" data-fancybox="gallery">
+                    <img src="/images/gallery/slider__img6.png" alt="">
                 </a>
             </div>
         </div>
