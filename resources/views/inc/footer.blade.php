@@ -10,8 +10,8 @@
                 </a>
             </li>
             <li class="footer__block-ul-li">
-                <a href="{{ route('news') }}">
-                    @lang('public.news')
+                <a href="{{ route('products') }}">
+                    @lang('public.product')
                 </a>
             </li>
             <li class="footer__block-ul-li">
@@ -76,8 +76,8 @@
             <div class="footer__block">
                 <a class="header__block-href-soc" href=""><img class="header__block-img-soc"
                         src="/images/soc/sn__fb.png"></a>
-                <a class="header__block-href-soc" href=""><img class="header__block-img-soc"
-                        src="/images/soc/sn__inst.png"></a>
+                <a class="header__block-href-soc" href="https://www.instagram.com/geo_aquaculture/"><img
+                        class="header__block-img-soc" src="/images/soc/sn__inst.png"></a>
             </div>
 
         </div>

@@ -369,6 +369,15 @@
 }
 
 @media screen and (max-width: 576px) {
+	.swiper-slide a:before,
+	.footer-gallery__slide a:before {
+		display: none;
+	}
+	.swiper-slide a:after,
+	.footer-gallery__slide a:after {
+		display: none;
+	}
+
 	.fish-description .item2 .arrow-rigth__href {
 		left: 0;
 	}

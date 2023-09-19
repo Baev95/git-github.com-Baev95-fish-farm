@@ -45,12 +45,12 @@
                     <p class="fish-description__text-b">
                         @lang('home.we_are_fish_farm')
                     </p>
-                    <img src="/images/main_index_img/fish_catch.png" alt="fish_catch">
+                    <img loading="lazy" src="/images/main_index_img/fish_catch.png" alt="fish_catch">
                 </div>
                 <div class="item2">
                     <p class="fish-description__text">@lang('home.our_company_specializes')
                     </p>
-                    <img src="/images/main_index_img/two_fishs.png" alt="two_fishs">
+                    <img loading="lazy" src="/images/main_index_img/two_fishs.png" alt="two_fishs">
 
                     <div class="arrow-rigth">
                         <a href="{{ route('about') }}" class="arrow-rigth__href">
@@ -60,7 +60,8 @@
                     </div>
                 </div>
                 <div class="item3">
-                    <img style="max-width: 290px;" src="/images/main_index_img/many_fishs.png" alt="many_fishs">
+                    <img loading="lazy" style="max-width: 290px;" src="/images/main_index_img/many_fishs.png"
+                        alt="many_fishs">
                 </div>
 
             </div>
@@ -112,47 +113,47 @@
 
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img1.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img1.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img1.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img2.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img2.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img3.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img3.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img3.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img4.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img4.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img5.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img5.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img5.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img6.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img6.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img6.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img7.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img7.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img7.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img8.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img8.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img8.png" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="/images/gallery/slider__img9.png" data-fancybox="gallery">
-                                <img src="/images/gallery/slider__img9.png" alt="">
+                                <img loading="lazy" src="/images/gallery/slider__img9.png" alt="">
                             </a>
                         </div>
 
@@ -170,7 +171,8 @@
                     <div class="features__card">
                         <div class="features__card-head">
                             <h4 class="features__card-title h4">@lang('home.environmental_sustainability_title')</h4>
-                            <img class="features__card-img" src="/images/features/featureCard__1.svg" alt="icon">
+                            <img loading="lazy" class="features__card-img" src="/images/features/featureCard__1.svg"
+                                alt="icon">
                         </div>
                         <p class="features__card-description">
                             @lang('home.environmental_sustainability')
@@ -179,7 +181,7 @@
                     <div class="features__card">
                         <div class="features__card-head">
                             <h4 class="features__card-title h4">@lang('home.quality_and_freshness_title')</h4>
-                            <img style="width: 140.647px;" class="features__card-img"
+                            <img loading="lazy" style="width: 140.647px;" class="features__card-img"
                                 src="/images/features/featureCard__2.svg" alt="icon">
                         </div>
                         <p class="features__card-description">
@@ -189,7 +191,8 @@
                     <div class="features__card">
                         <div class="features__card-head">
                             <h4 class="features__card-title h4">@lang('home.industry_pioneers_title')</h4>
-                            <img class="features__card-img" src="/images/features/featureCard__3.svg" alt="icon">
+                            <img loading="lazy" class="features__card-img" src="/images/features/featureCard__3.svg"
+                                alt="icon">
                         </div>
                         <p class="features__card-description">
                             @lang('home.industry_pioneers')
@@ -198,11 +201,13 @@
                 </div>
 
                 <div class="features__description" data-aos="zoom-in">
-                    <img class="features__description-left-img" src="/images/features/fish.png" alt="">
+                    <img loading="lazy" class="features__description-left-img" src="/images/features/fish.png"
+                        alt="">
                     <p class="features__description-text">
                         @lang('home.each_fish')
                     </p>
-                    <img class="features__description-rigth-img" src="/images/features/fish_steak.png" alt="">
+                    <img loading="lazy" class="features__description-rigth-img" src="/images/features/fish_steak.png"
+                        alt="">
                 </div>
 
             </div>
@@ -215,7 +220,8 @@
                 <div class="our-products__list">
                     <div class="our-products__block">
                         <h4 class="our-products__block-title h4">@lang('home.fish')</h4>
-                        <img class="our-products__block-img" src="/images/our-products/lonely_fish.png" alt="icon">
+                        <img loading="lazy" class="our-products__block-img" src="/images/our-products/lonely_fish.png"
+                            alt="icon">
                         <div class="arrow-rigth">
                             <a href="{{ route('fish') }}" class="arrow-rigth__href">@lang('public.latest_news')
                                 <span> </span>
@@ -224,7 +230,8 @@
                     </div>
                     <div class="our-products__block">
                         <h4 class="our-products__block-title h4">@lang('home.fish_feed')</h4>
-                        <img class="our-products__block-img" src="/images/our-products/food_fishs.png" alt="icon">
+                        <img loading="lazy" class="our-products__block-img" src="/images/our-products/food_fishs.png"
+                            alt="icon">
                         <div class="arrow-rigth">
                             <a href="{{ route('fishFeed') }}" class="arrow-rigth__href">
                                 @lang('public.latest_news')
@@ -236,64 +243,5 @@
 
             </div>
         </section>
-        <?/*
-            <section class="news m160" data-aos="zoom-in">
-                <div class="container">
-
-                    <div class="news-head">
-                        <h2 class="news__h2 h2">ჩვენი წარმოება</h2>
-                        <div class="arrow-rigth">
-                            <a href="#" class="arrow-rigth__href arrow-rigth__href-rigth">მეტის გასაგებად
-                                <span> </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="news__list">
-
-                        <div class="news__card">
-                            <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                            <div class="news__card-block card-block">
-                                <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                                <p class="card-block-description">
-                                    თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                    თვისებებსა და გემოზე. </p>
-                                <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                                <span class="card-block-date">22.04.2023</span>
-                            </div>
-
-                        </div>
-                        <div class="news__card">
-                            <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                            <div class="news__card-block card-block">
-                                <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                                <p class="card-block-description">
-                                    თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                    თვისებებსა და გემოზე. </p>
-                                <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                                <span class="card-block-date">22.04.2023</span>
-                            </div>
-                        </div>
-                        <div class="news__card">
-                            <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                            <div class="news__card-block card-block">
-                                <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                                <p class="card-block-description">
-                                    თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                    თვისებებსა და გემოზე. </p>
-                                <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                                <span class="card-block-date">22.04.2023</span>
-                            </div>
-                        </div>
-                        <div class="arrow-rigth news__list-arrow-rigth">
-                            <a href="#" class="arrow-rigth__href arrow-rigth__href-rigth">მეტის გასაგებად
-                                <span> </span>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-    */?>
     </main>
 @endsection

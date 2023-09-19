@@ -82,9 +82,9 @@
                     </ul>
                 </li>
                 <li class="header__block-li menu" style="position: relative;">
-
-                    @lang('public.news')
-
+                    <a href="javascript:void(0);">
+                        @lang('public.news')
+                    </a>
                     <ul class="menu_sub">
                         <li class="header__block-li menu-item">
                             <a href="{{ route('ecological_aquaculture') }}" style="color: rgba(255, 255, 255, 1);">
@@ -114,8 +114,8 @@
         <div class="header__block">
             <a class="header__block-href-soc" href=""><img class="header__block-img-soc"
                     src="/images/soc/sn__fb.png"></a>
-            <a class="header__block-href-soc" href=""><img class="header__block-img-soc"
-                    src="/images/soc/sn__inst.png"></a>
+            <a class="header__block-href-soc" href="https://www.instagram.com/geo_aquaculture/"><img
+                    class="header__block-img-soc" src="/images/soc/sn__inst.png"></a>
             <a class="header__block-href-soc" href="tel:+902525366229"><svg xmlns="http://www.w3.org/2000/svg"
                     width="24" height="25" viewBox="0 0 24 25" fill="none" style="margin-right: 4px;">
                     <path
@@ -144,26 +144,28 @@
                 </div>
                 <ul class="header__block-ul menu" id="menu">
                     <div class="header__block-mob dropdown">
+
                         <div class="dropbtn">
-                            <?php if ($current_lang == 'en') { ?>
-                            <img class="header__block-flags" src="/images/flags/EN.png"><span>EN</span>
-                            <?php } else { ?>
+                            <?php if ($current_lang == 'ge') { ?>
                             <img class="header__block-flags" src="/images/flags/GE.png"><span>GE</span>
+                            <?php } else { ?>
+                            <img class="header__block-flags" src="/images/flags/EN.png"><span>EN</span>
                             <?php } ?>
                         </div>
                         <div class="dropdown-content" id="dropdownContent">
-                            <?php if ($current_lang == 'en') { ?>
-                            <a class="dropdown-item" href="locale/ru" data-lang="ru">
-                                <img class="header__block-flags" src="/images/flags/GE.png">
-                                <span>GE</span>
-                            </a>
-                            <?php } else { ?>
+                            <?php if ($current_lang == 'ge') { ?>
                             <a class="dropdown-item" href="locale/en" data-lang="en">
                                 <img class="header__block-flags" src="/images/flags/EN.png">
                                 <span>EN</span>
                             </a>
+                            <?php } else { ?>
+                            <a class="dropdown-item" href="locale/ge" data-lang="ge">
+                                <img class="header__block-flags" src="/images/flags/GE.png">
+                                <span>GE</span>
+                            </a>
                             <?php } ?>
                         </div>
+
                     </div>
                     <li class="header__block-li">
                         <a href="{{ route('about') }}">
@@ -172,7 +174,27 @@
                     </li>
                     <li class="header__block-li">
                         <a href="{{ route('news') }}">
-                            @lang('public.news')
+                            @lang('public.product')
+                        </a>
+                    </li>
+                    <li class="header__block-li">
+                        <a href="{{ route('fish') }}">
+                            @lang('public.fish')
+                        </a>
+                    </li>
+                    <li class="header__block-li">
+                        <a href="{{ route('fishFeed') }}">
+                            @lang('public.fishFeed')
+                        </a>
+                    </li>
+                    <li class="header__block-li">
+                        <a href="{{ route('ecological_aquaculture') }}">
+                            @lang('public.ecological_aquaculture')
+                        </a>
+                    </li>
+                    <li class="header__block-li">
+                        <a href="{{ route('unveiling_the_factors') }}">
+                            @lang('public.unveiling_the_factors')
                         </a>
                     </li>
                     <li class="header__block-li">

@@ -2,7 +2,7 @@
 
 return [
 	'title' => 'Home',
-	'banner_text' => 'Welcome to Georgian aquaculture!',
+	'banner_text' => 'Welcome to <br> Georgian aquaculture!',
 	'we_are_fish_farm' => 'We are an ecologically clean fish farm located in the picturesque mountainous region of Georgia.',
 	'our_company_specializes' => 'Our company specializes in trout breeding and offers you fresh, high-quality fish, grown with care for nature and your health.',
 	'why_choose_georgian_aquaculture' => 'Why choose Georgian Aquaculture?',

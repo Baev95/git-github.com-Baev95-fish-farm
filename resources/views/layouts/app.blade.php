@@ -10,6 +10,7 @@
     <title> @yield('title-block')</title>
 
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <link href="/css/media.css" rel="stylesheet">
     <? // <link rel="stylesheet" href="/css/build/swiper.css"> ?>
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet" />
@@ -30,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <? /* <script src="/js/swiper-bundle.js"></script> */ ?>
-    <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
 
     <script>
         Fancybox.bind("#gallery a", {

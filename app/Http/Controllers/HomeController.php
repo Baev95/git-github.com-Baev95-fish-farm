@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Facade;
 
 class HomeController extends Controller
 {
-
-
-
 	public function index(Request $request)
 	{
 

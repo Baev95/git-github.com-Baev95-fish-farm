@@ -7,7 +7,8 @@ use App\Http\Controllers\LocalizationControler;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\MainController;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\loginController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,7 @@ Route::get("locale/{lung}", [LocalizationControler::class, "setLang"]);
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::get('/', [MainController::class, 'index'])->name('admin.index');
 });
-
+//Route::get('login', [HomeController::class, 'login']);
 //Route::get('/locale/{locale}', 'App\Http\Controllers\LocalizationControler@setLang')->name('setLang');
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [PageController::class, "about"])->name('about');
@@ -44,7 +45,7 @@ Route::get('/ecological_aquaculture', [PageController::class, "ecological_aquacu
 Route::get('news/{slug}', [PageController::class, "news"]);
 
 Route::fallback(function () {
-    abort(404, "Oops, Page not found <b>404</b>");
+    abort(404, "Oops, Page not found 404");
 });
 
 // Route::group(
@@ -57,15 +58,15 @@ Route::fallback(function () {
 //         $locale = request()->segment(1, '');
 //         var_dump($locale);
 
-        /*  Route::get('/localization/{language}', function ($language) {
+/*  Route::get('/localization/{language}', function ($language) {
             App::setLocale($language);
             return view('localization');
         });*/
 
-        // 
+// 
 
-        // Route::resource('posts', 'App\Http\Controllers\PostController');
-        /*Route::fallback(function () {
+// Route::resource('posts', 'App\Http\Controllers\PostController');
+/*Route::fallback(function () {
             abort(404, "Oops, Page not found 404");
         });
 //     }
@@ -164,16 +165,16 @@ Route::resource('posts', 'App\Http\Controllers\PostController');
 //         $locale = request()->segment(1, '');
 //         var_dump($locale);
 
-        /*  Route::get('/localization/{language}', function ($language) {
+/*  Route::get('/localization/{language}', function ($language) {
             App::setLocale($language);
             return view('localization');
         });*/
 
-        // Route::get('', 'App\Http\Controllers\HomeController@index');
-        // Route::get('/page/{slug}', 'App\Http\Controllers\PageController@show');
+// Route::get('', 'App\Http\Controllers\HomeController@index');
+// Route::get('/page/{slug}', 'App\Http\Controllers\PageController@show');
 
-        // Route::resource('posts', 'App\Http\Controllers\PostController');
-        /*Route::fallback(function () {
+// Route::resource('posts', 'App\Http\Controllers\PostController');
+/*Route::fallback(function () {
             abort(404, "Oops, Page not found 404");
         });*/
 //     }
@@ -183,3 +184,14 @@ Route::resource('posts', 'App\Http\Controllers\PostController');
 // Route::group(['prefix' => "{lang}"], function () {
 //     Route::get('/', 'HomeController@index');
 // });
+
+Auth::routes();
+
+Route::get('/login', [loginController::class, 'index'])->name('login');
+
+
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::get('/test', function () {
+        return view('test');
+    });
+});

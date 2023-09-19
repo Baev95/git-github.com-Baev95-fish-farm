@@ -33,9 +33,6 @@
 	.fish-description__text {
 		margin-bottom: 60px;
 	}
-	.features__description-left-img {
-		max-width: 350px;
-	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -167,9 +164,6 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.features__description-left-img {
-		bottom: -20px;
-	}
 }
 
 @media screen and (max-width: 992px) {
@@ -300,7 +294,6 @@
 		max-width: 350px;
 		position: relative;
 		margin: 0;
-		bottom: 0;
 	}
 	.features__description-text {
 		font-size: 18px;
@@ -376,6 +369,15 @@
 }
 
 @media screen and (max-width: 576px) {
+	.swiper-slide a:before,
+	.footer-gallery__slide a:before {
+		display: none;
+	}
+	.swiper-slide a:after,
+	.footer-gallery__slide a:after {
+		display: none;
+	}
+
 	.fish-description .item2 .arrow-rigth__href {
 		left: 0;
 	}
