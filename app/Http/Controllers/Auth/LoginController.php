@@ -30,7 +30,7 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        return redirect()->intended($this->redirectPath());
+        return redirect()->intended('/login2');
     }
     //protected $redirectTo = RouteServiceProvider::LOG;
 

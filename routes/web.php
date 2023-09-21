@@ -187,7 +187,7 @@ Route::resource('posts', 'App\Http\Controllers\PostController');
 
 Auth::routes();
 
-Route::get('/login', [loginController::class, 'index'])->name('login');
+Route::get('/login2', [loginController::class, 'index'])->name('login2');
 
 
 Route::group(['middleware' => ['role:admin']], function () {
