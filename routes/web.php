@@ -1,11 +1,14 @@
 <?php
 
 // use App\Services\Localozation\LocalizationService;
+
+use App\Http\Controllers\Admin\CategoryController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use App\Http\Controllers\LocalizationControler;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\loginController;
 use Illuminate\Support\Facades\Auth;
@@ -190,8 +193,15 @@ Auth::routes();
 Route::get('/login2', [loginController::class, 'index'])->name('login2');
 
 
-Route::group(['middleware' => ['role:admin']], function () {
-    Route::get('/test', function () {
-        return view('test');
-    });
+// Route::group(['middleware' => ['role:admin']], function () {
+//     Route::get('/admin', function () {
+//         return view('admin.home.index');
+//     });
+// });
+
+Route::middleware(['role:admin'])->prefix('admin-panel')->group(function () {
+    Route::get('/', [MainController::class, 'index'])->name('homeAdmin');
+
+    Route::resource('category', CategoryController::class);
+    Route::resource('post', PostController::class);
 });
