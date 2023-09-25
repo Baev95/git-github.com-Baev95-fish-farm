@@ -25,12 +25,12 @@
                         <div class="inner">
                             <h3>{{ $posts_count }}</h3>
 
-                            <p>Posts</p>
+                            <p>News</p>
                         </div>
                         <div class="icon">
                             <i class="nav-icon fas fa-solid fa-newspaper"></i>
                         </div>
-                        <a href="{{ route('post.index') }}" class="small-box-footer">Все статьи <i
+                        <a href="{{ route('post.index') }}" class="small-box-footer">All news <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -41,12 +41,12 @@
                         <div class="inner">
                             <h3>{{ $categories_count }}</h3>
 
-                            <p>Категории</p>
+                            <p>Categories</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
                         </div>
-                        <a href="{{ route('category.index') }}" class="small-box-footer">Все категории <i
+                        <a href="{{ route('category.index') }}" class="small-box-footer">All categories <i
                                 class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>

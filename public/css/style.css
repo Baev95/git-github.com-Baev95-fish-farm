@@ -596,7 +596,8 @@ p {
 
 /* СТИЛИ banner */
 .banner {
-	background-image: url(/images/banner/banner_h1.png);
+	background-image: url(/images/banner/banner_h1.webp);
+	background-image: url(/images/banner/banner_h1.jpg);
 	height: 682px;
 	background-size: cover;
 	display: flex;

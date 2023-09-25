@@ -33,8 +33,8 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60"
-                width="60">
+            <img class="animation__shake" src="/images/fish_logo/head_log.png" alt="AdminLTELogo" height="60"
+                width="150">
         </div>
 
         <!-- Navbar -->
@@ -49,7 +49,7 @@
                     <a href="/" class="nav-link">Go to the website</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="login2" class="nav-link">Registration</a>
+                    <a href="/login2" class="nav-link">Registration</a>
                 </li>
             </ul>
 
@@ -94,9 +94,12 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
+            <style>
+                .brand-link {
+                    padding: 0.8125rem 1.5rem;
+                }
+            </style>
             <a href="{{ route('homeAdmin') }}" class="brand-link">
-                <img src="/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Admin Panel</span>
 
             </a>

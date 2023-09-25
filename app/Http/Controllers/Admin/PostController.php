@@ -46,13 +46,19 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post();
-        $post->title = $request->title;
+
+        $title_url = preg_replace('/[^а-яёa-z,]/iu', '-',  $request->title_en);
+        $post->title_url = $title_url;
+        $post->title_en = $request->title_en;
+        $post->title_ge = $request->title_ge;
         $post->img = $request->img;
-        $post->text = $request->text;
+        $post->text_en = $request->text_en;
+        $post->text_ge = $request->text_ge;
         $post->cat_id = $request->cat_id;
+        $post->language = $request->language;
         $post->save();
 
-        return redirect()->back()->withSuccess('Статья была успешно добавлена!');
+        return redirect()->back()->withSuccess('The news was successfully added!');
     }
 
     /**
@@ -91,13 +97,18 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        $post->title = $request->title;
+        $title_url = preg_replace('/[^а-яёa-z,]/iu', '-',  $request->title_en);
+        $post->title_url = $title_url;
+        $post->title_en = $request->title_en;
+        $post->title_ge = $request->title_ge;
         $post->img = $request->img;
-        $post->text = $request->text;
+        $post->text_en = $request->text_en;
+        $post->text_ge = $request->text_ge;
         $post->cat_id = $request->cat_id;
+        $post->language = $request->language;
         $post->save();
 
-        return redirect()->back()->withSuccess('Статья была успешно обновлена!');
+        return redirect()->back()->withSuccess('The news was successfully updated!');
     }
 
     /**
@@ -109,6 +120,6 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         $post->delete();
-        return redirect()->back()->withSuccess('Статья была успешно удалена!');
+        return redirect()->back()->withSuccess('The news was successfully deleted!');
     }
 }

@@ -89,8 +89,9 @@
                         <div style="margin-bottom: 0;display: flex;" class="footer__block">
                             <a class="header__block-href-soc" href=""><img style="max-width: 40px;"
                                     class="header__block-img-soc" src="/images/soc/sn__fb.svg"></a>
-                            <a class="header__block-href-soc" href=""><img style="max-width: 40px;"
-                                    class="header__block-img-soc" src="/images/soc/sn__inst.svg"></a>
+                            <a class="header__block-href-soc" href="https://www.instagram.com/geo_aquaculture/"><img
+                                    style="max-width: 40px;" class="header__block-img-soc"
+                                    src="/images/soc/sn__inst.svg"></a>
                         </div>
                     </div>
 

@@ -39,15 +39,35 @@
                     <div class="about__first-block">
                         <p class="about__first-b">@lang('about.leading_fish_farm')</p>
                         <p>@lang('about.we_are_proud_to')</p>
-                        <img class="about__first-img" src="/images/about/about.png" alt="logo">
+                        <picture>
+                            <source srcset="/images/about/about.webp" type="image/webp">
+                            <source srcset="/images/about/about.jpg" type="image/jpeg">
+                            <img class="about__first-img" src="/images/about/about.jpg" alt="logo">
+                        </picture>
+
                         <p>@lang('about.at_georgian_aquaculture')</p>
                     </div>
-                    <img class="about__first-banner" src="/images/about/banner-about.png" alt="">
+                    <picture>
+                        <source srcset="/images/about/banner-about.webp" type="image/webp">
+                        <source srcset="/images/about/banner-about.jpg" type="image/jpeg">
+                        <img class="about__first-banner" src="/images/about/banner-about.jpg" alt="">
+                    </picture>
+
                 </div>
                 <div class="about__second">
-                    <img class="about__second-middle" src="/images/about/banner-about_middle.png" alt="">
+
+                    <picture>
+                        <source srcset="/images/about/banner-about_middle.webp" type="image/webp">
+                        <source srcset="/images/about/banner-about_middle.jpg" type="image/jpeg">
+                        <img class="about__second-middle" src="/images/about/banner-about_middle.jpg" alt="">
+                    </picture>
                     <div class="about__second-block">
-                        <img class="about__second-img" src="/images/about/left-banner-about.png" alt="">
+                        <picture>
+                            <source srcset="/images/about/left-banner-about.webp" type="image/webp">
+                            <source srcset="/images/about/left-banner-about.jpg" type="image/jpeg">
+                            <img class="about__second-img" src="/images/about/left-banner-about.jpg" alt="">
+                        </picture>
+
                         <p>@lang('about.we_provide_our_fish')</p>
                     </div>
                 </div>

@@ -82,20 +82,23 @@
                     </ul>
                 </li>
                 <li class="header__block-li menu" style="position: relative;">
-                    <a href="javascript:void(0);">
+                    <a href="{{ route('news') }}">
                         @lang('public.news')
                     </a>
+
                     <ul class="menu_sub">
-                        <li class="header__block-li menu-item">
-                            <a href="{{ route('ecological_aquaculture') }}" style="color: rgba(255, 255, 255, 1);">
-                                @lang('public.ecological_aquaculture')
-                            </a>
-                        </li>
-                        <li class="header__block-li menu-item">
-                            <a href="{{ route('unveiling_the_factors') }}" style="color: rgba(255, 255, 255, 1);">
-                                @lang('public.unveiling_the_factors')
-                            </a>
-                        </li>
+                        @foreach ($posts as $post)
+                            <li class="header__block-li menu-item">
+                                <a href="{{ route('posts.single', ['title_url' => $post->title_url]) }}"
+                                    style="color: rgba(255, 255, 255, 1);">
+                                    <?php if ($current_lang == 'ge') { ?>
+                                    {{ $post->title_ge }}
+                                    <?php } else { ?>
+                                    {{ $post->title_en }}
+                                    <?php } ?>
+                                </a>
+                            </li>
+                        @endforeach
                     </ul>
                 </li>
                 <li class="header__block-li">
@@ -187,16 +190,17 @@
                             @lang('public.fishFeed')
                         </a>
                     </li>
-                    <li class="header__block-li">
-                        <a href="{{ route('ecological_aquaculture') }}">
-                            @lang('public.ecological_aquaculture')
-                        </a>
-                    </li>
-                    <li class="header__block-li">
-                        <a href="{{ route('unveiling_the_factors') }}">
-                            @lang('public.unveiling_the_factors')
-                        </a>
-                    </li>
+                    @foreach ($posts as $post)
+                        <li class="header__block-li">
+                            <a href="{{ route('posts.single', ['title_url' => $post->title_url]) }}">
+                                <?php if ($current_lang == 'ge') { ?>
+                                {{ $post->title_ge }}
+                                <?php } else { ?>
+                                {{ $post->title_en }}
+                                <?php } ?>
+                            </a>
+                        </li>
+                    @endforeach
                     <li class="header__block-li">
                         <a href="{{ route('career') }}">
                             @lang('public.career')

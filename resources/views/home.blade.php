@@ -45,13 +45,21 @@
                     <p class="fish-description__text-b">
                         @lang('home.we_are_fish_farm')
                     </p>
-                    <img loading="lazy" src="/images/main_index_img/fish_catch.png" alt="fish_catch">
+
+                    <picture>
+                        <source srcset="/images/main_index_img/fish_catch.webp" type="image/webp">
+                        <source srcset="/images/main_index_img/fish_catch.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/main_index_img/fish_catch.jpg" alt="fish_catch">
+                    </picture>
                 </div>
                 <div class="item2">
                     <p class="fish-description__text">@lang('home.our_company_specializes')
                     </p>
-                    <img loading="lazy" src="/images/main_index_img/two_fishs.png" alt="two_fishs">
-
+                    <picture>
+                        <source srcset="/images/main_index_img/two_fishs.webp" type="image/webp">
+                        <source srcset="/images/main_index_img/two_fishs.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/main_index_img/two_fishs.jpg" alt="two_fishs">
+                    </picture>
                     <div class="arrow-rigth">
                         <a href="{{ route('about') }}" class="arrow-rigth__href">
                             @lang('public.more_about_us')
@@ -60,8 +68,13 @@
                     </div>
                 </div>
                 <div class="item3">
-                    <img loading="lazy" style="max-width: 290px;" src="/images/main_index_img/many_fishs.png"
-                        alt="many_fishs">
+                    <picture>
+                        <source srcset="/images/main_index_img/many_fishs.webp" type="image/webp">
+                        <source srcset="/images/main_index_img/many_fishs.jpg" type="image/jpeg">
+                        <img loading="lazy" style="max-width: 290px;" src="/images/main_index_img/many_fishs.jpg"
+                            alt="many_fishs">
+                    </picture>
+
                 </div>
 
             </div>
@@ -112,48 +125,84 @@
                     <div class="swiper-wrapper" id="gallery">
 
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img1.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img1.png" alt="">
+                            <a href="/images/gallery/slider__img1.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img1.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img1.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img1.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img2.png" alt="">
+                            <a href="/images/gallery/slider__img2.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img2.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img2.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img2.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img3.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img3.png" alt="">
+                            <a href="/images/gallery/slider__img3.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img3.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img3.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img3.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img4.png" alt="">
+                            <a href="/images/gallery/slider__img4.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img4.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img4.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img4.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img5.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img5.png" alt="">
+                            <a href="/images/gallery/slider__img5.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img5.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img5.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img5.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img6.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img6.png" alt="">
+                            <a href="/images/gallery/slider__img6.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img6.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img6.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img6.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img7.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img7.png" alt="">
+                            <a href="/images/gallery/slider__img7.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img7.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img7.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img7.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img8.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img8.png" alt="">
+                            <a href="/images/gallery/slider__img8.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img8.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img8.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img8.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/images/gallery/slider__img9.png" data-fancybox="gallery">
-                                <img loading="lazy" src="/images/gallery/slider__img9.png" alt="">
+                            <a href="/images/gallery/slider__img9.jpg" data-fancybox="gallery">
+                                <picture>
+                                    <source srcset="/images/gallery/slider__img9.webp" type="image/webp">
+                                    <source srcset="/images/gallery/slider__img9.jpg" type="image/jpeg">
+                                    <img loading="lazy" src="/images/gallery/slider__img9.jpg" alt="">
+                                </picture>
                             </a>
                         </div>
 
@@ -220,8 +269,13 @@
                 <div class="our-products__list">
                     <div class="our-products__block">
                         <h4 class="our-products__block-title h4">@lang('home.fish')</h4>
-                        <img loading="lazy" class="our-products__block-img" src="/images/our-products/lonely_fish.png"
-                            alt="icon">
+                        <picture>
+                            <source srcset="/images/our-products/lonely_fish.webp" type="image/webp">
+                            <source srcset="/images/our-products/lonely_fish.jpg" type="image/jpeg">
+                            <img loading="lazy" class="our-products__block-img"
+                                src="/images/our-products/lonely_fish.jpg" alt="icon">
+                        </picture>
+
                         <div class="arrow-rigth">
                             <a href="{{ route('fish') }}" class="arrow-rigth__href">@lang('public.latest_news')
                                 <span> </span>
@@ -230,8 +284,13 @@
                     </div>
                     <div class="our-products__block">
                         <h4 class="our-products__block-title h4">@lang('home.fish_feed')</h4>
-                        <img loading="lazy" class="our-products__block-img" src="/images/our-products/food_fishs.png"
-                            alt="icon">
+                        <picture>
+                            <source srcset="/images/our-products/food_fishs.webp" type="image/webp">
+                            <source srcset="/images/our-products/food_fishs.jpg" type="image/jpeg">
+                            <img loading="lazy" class="our-products__block-img" src="/images/our-products/food_fishs.jpg"
+                                alt="icon">
+                        </picture>
+
                         <div class="arrow-rigth">
                             <a href="{{ route('fishFeed') }}" class="arrow-rigth__href">
                                 @lang('public.latest_news')

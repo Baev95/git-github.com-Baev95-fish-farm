@@ -28,36 +28,62 @@
 
         <div class="footer-gallery" id="gallery">
 
+
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img1.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img1.png" alt="">
+                <a href="/images/gallery/slider__img1.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img1.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img1.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img1.jpg" alt="">
+                    </picture>
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img2.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img2.png" alt="">
+                <a href="/images/gallery/slider__img2.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img2.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img2.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img2.jpg" alt="">
+                    </picture>
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img3.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img3.png" alt="">
+                <a href="/images/gallery/slider__img3.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img3.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img3.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img3.jpg" alt="">
+                    </picture>
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img4.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img4.png" alt="">
+                <a href="/images/gallery/slider__img4.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img4.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img4.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img4.jpg" alt="">
+                    </picture>
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img5.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img5.png" alt="">
+                <a href="/images/gallery/slider__img5.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img5.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img5.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img5.jpg" alt="">
+                    </picture>
                 </a>
             </div>
             <div class="footer-gallery__slide">
-                <a href="/images/gallery/slider__img6.png" data-fancybox="gallery">
-                    <img src="/images/gallery/slider__img6.png" alt="">
+                <a href="/images/gallery/slider__img6.jpg" data-fancybox="gallery">
+                    <picture>
+                        <source srcset="/images/gallery/slider__img6.webp" type="image/webp">
+                        <source srcset="/images/gallery/slider__img6.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/images/gallery/slider__img6.jpg" alt="">
+                    </picture>
                 </a>
             </div>
+
         </div>
 
         <div>

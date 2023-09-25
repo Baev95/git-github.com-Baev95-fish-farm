@@ -5,6 +5,22 @@
 @endsection
 
 @section('content')
+    <style>
+        .news__card-img {
+            height: -webkit-fill-available;
+        }
+
+        .news__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .news__card a:hover {
+            color: #4d977c;
+        }
+    </style>
     <main>
         <section class="bread">
             <div class="container bread__wrapper">
@@ -40,29 +56,39 @@
 
                 <div class="news__list">
 
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
-                        </div>
-                    </div>
 
-                    <div class="news__card">
-                        <img class="news__card-img" src="/images/our-products/lonely_fish.png" alt="icon">
-                        <div class="news__card-block card-block">
-                            <h4 class="card-block-title h4">ახალი ამბების მაგალითი</h4>
-                            <p class="card-block-description">
-                                თითოეული თევზი იზრდება სიყვარულით და ზრუნვით, განსაკუთრებული ყურადღების მიქცევით მის საკვებ
-                                თვისებებსა და გემოზე. </p>
-                            <a class="card-block-link">წაიკითხეთ მთლიანად...</a>
-                            <span class="card-block-date">22.04.2023</span>
+                    @foreach ($posts as $post)
+                        <div class="news__card">
+                            <img class="news__card-img" src="{{ $post->img }}" alt="icon">
+                            <div class="news__card-block card-block">
+                                <h4 class="card-block-title h4">
+                                    <?php if ($current_lang == 'ge') { ?>
+                                    {{ $post->title_ge }}
+                                    <?php } else { ?>
+                                    {{ $post->title_en }}
+                                    <?php } ?></h4>
+                                <div class="card-block-description">
+                                    <?php if ($current_lang == 'ge') {
+                                        $string = strip_tags($post->text_ge);
+                                        $string = substr($string, 0, 150);
+                                        $string = substr($string, 0, strrpos($string, ' '));
+                                        echo $string . '… ';
+                                    } else {
+                                        $string = strip_tags($post->text_en);
+                                        $string = substr($string, 0, 150);
+                                        $string = substr($string, 0, strrpos($string, ' '));
+                                        echo $string . '… ';
+                                    } ?> </div>
+                                <a href="{{ route('posts.single', ['title_url' => $post->title_url]) }}"
+                                    class="card-block-link">
+                                    @lang('public.more_about_us')
+                                </a>
+                                <span class="card-block-date">{{ $post->created_at }}</span>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
+
+
 
                 </div>
 
